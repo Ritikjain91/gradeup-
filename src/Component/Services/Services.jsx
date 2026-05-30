@@ -14,7 +14,7 @@ const Services = () => {
         onClick={toggleTheme}
         className="px-4 py-2 rounded border mb-6"
       >
-        {darkMode ? "Light" : "Dark"}
+        {darkMode ? 'Light' : 'Dark'}
       </button>
 
       <p className="text-5xl text-center font-bold">
@@ -50,7 +50,7 @@ const Services = () => {
             darkMode ? 'bg-gray-800 text-white' : 'bg-gray-100 text-black'
           }`}
         >
-<code>{`
+          <code>{`
 let data = 10;        // Number
 console.log(data);
 
@@ -59,8 +59,39 @@ console.log(data);
 
 data = true;          // Boolean
 console.log(data);
-`}</code>
+          `}</code>
         </pre>
+      </div>
+
+      <div className="mt-9">
+        <p className="text-3xl text-center font-bold">What is let, var, const?</p>
+
+        <p className="text-lg mt-6 text-center">
+          In JavaScript, <code>let</code>, <code>var</code>, and <code>const</code> are keywords used to declare variables, each with different characteristics regarding scope, hoisting, and mutability.
+        </p>
+
+        <p className="text-lg mt-6 text-center">
+          <strong>var:</strong> This is the oldest way to declare variables in JavaScript. Variables declared with <code>var</code> are function-scoped, meaning they are accessible within the function they are declared in. They are also hoisted to the top of their scope, which can lead to unexpected behavior if not used carefully. Additionally, <code>var</code> allows for variable re-declaration and reassignment.
+        </p>
+
+        <div className="text-center mt-6">
+          <pre
+            className={`text-left p-4 rounded-lg overflow-x-auto ${
+              darkMode ? 'bg-gray-800 text-white' : 'bg-gray-100 text-black'
+            }`}
+          >
+            <code>{`// var
+var x = 10;
+console.log(x); // 10
+
+x = 20;
+console.log(x); // 20
+
+var x = 30;      // Re-declaration allowed
+console.log(x); // 30
+            `}</code>
+          </pre>
+        </div>
       </div>
     </div>
   );
