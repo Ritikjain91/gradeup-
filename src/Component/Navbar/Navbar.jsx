@@ -14,6 +14,10 @@ const Navbar = () => {
         </li>
         <li className="nav-item">
           <Link to="/services" className="nav-link">interview Preparation</Link>
+          
+        </li>
+         <li className="nav-item">
+          <Link to="/contact" className="nav-link">SQL (GATE CS &ESE(EC&EE) & Interview Preparation) <span className="nav-link-highlight">Coming Soon</span></Link>
         </li>
         <li className="nav-item">
           <Link to="/contact" className="nav-link">Contact Us </Link>
