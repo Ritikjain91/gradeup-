@@ -10,17 +10,25 @@ const Navbar = () => {
           <Link to="/" className="nav-link">Home</Link>
         </li>
         <li className="nav-item">
-          <Link to="/about" className="nav-link">Gate</Link>
+          <Link to="/about" className="nav-link">GATE</Link>
         </li>
         <li className="nav-item">
-          <Link to="/services" className="nav-link">interview Preparation</Link>
-          
-        </li>
-         <li className="nav-item">
-          <Link to="/contact" className="nav-link">DBMS SQL (GATE CS & PSUS EXAM &ESE(EC&EE) & Interview Preparation) <span className="nav-link-highlight">Coming Soon</span></Link>
+          <Link to="/services" className="nav-link">Interview Preparation</Link>
         </li>
         <li className="nav-item">
-          <Link to="/contact" className="nav-link">Contact Us </Link>
+          <Link to="/contact" className="nav-link">
+            DBMS & SQL (GATE CS & PSUs Exam & ESE (EC & EE) & Interview Preparation  & Other Related Govt Exams & Interview Preparation) 
+            <span className="nav-link-highlight">Coming Soon</span>
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/contact" className="nav-link">
+            Computer Networks (GATE CS & PSUs Exam & ESE (EC & EE) & Other Related Govt Exams & Interview Preparation) 
+            <span className="nav-link-highlight">Coming Soon</span>
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/contact" className="nav-link">Contact Us</Link>
         </li>
       </ul>
     </nav>
