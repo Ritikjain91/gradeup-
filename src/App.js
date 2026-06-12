@@ -10,6 +10,7 @@ function App() {
   return (
     <BrowserRouter>  {/* Router must wrap everything using Link */}
       <Navbar />
+      
       {/* Your routes */}
       <Routes>
         <Route path="/" element={<Home />} />

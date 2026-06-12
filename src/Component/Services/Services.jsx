@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTheme } from '../ThemeContext/Themecontext';
+import Scrollbar from '../Scrollbar/Scrollbar';
 
 const Services = () => {
   const { darkMode, toggleTheme } = useTheme();
@@ -10,13 +11,17 @@ const Services = () => {
         darkMode ? 'bg-black text-white' : 'bg-white text-black'
       }`}
     >
+      <div className="mb-5">
+          <Scrollbar />
+
+      </div>
       <button
         onClick={toggleTheme}
         className="px-4 py-2 rounded border mb-6"
       >
         {darkMode ? 'Light' : 'Dark'}
       </button>
-
+    
       <p className="text-5xl text-center font-bold">
         JavaScript Mastery Short Notes
       </p>
