@@ -315,6 +315,21 @@ Update Real DOM
 <p><i>Github : <a target="_blank" rel="noopener noreferrer" href="https://github.com/acdlite/react-fiber-architecture">https://github.com/acdlite/react-fiber-architecture</a></i></p>
 <p><i>React docs : <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/docs/reconciliation.html">https://reactjs.org/docs/reconciliation.html</a></i></p>
 </div>
+<div>
+<p className='text-3xl mt-6 text-center font-bold'>
+  What Are the Phases in React?
+</p>
+</div>
+<div>
+
+  <p className='text-3xl mt-6 text-center font-bold'>
+    What are Hooks ?
+  </p>
+  <p className='text-lg mt-6 text-center'>
+    Hooks are features provided by React that allow us to use state and other React functionalities inside functional components. They serve as an alternative to certain class component lifecycle methods, such as `componentDidMount()` and `componentDidUpdate()`. Additionally, Hooks make the code more flexible, reusable, and easier to maintain, resulting in cleaner and more readable React applications.
+
+  </p>
+</div>
     </div>
   );
 };
