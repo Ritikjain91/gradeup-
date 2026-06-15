@@ -311,8 +311,9 @@ Update Real DOM
 
   <strong><i>Update:</i></strong> An update is a change in the data used to render a React application, usually triggered by <code>setState</code> or a state updater function from <code>useState</code>. This eventually causes React to re-render the component.
 </p>
-<p><i>Reference: <a target="_blank" rel="noopener noreferrer" href="https://github.com/acdlite/react-fiber-architecture">https://github.com/acdlite/react-fiber-architecture</a></i></p>
-<p><i>Reference: <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/docs/reconciliation.html">https://reactjs.org/docs/reconciliation.html</a></i></p>
+<p><i>References-</i></p>
+<p><i>Github : <a target="_blank" rel="noopener noreferrer" href="https://github.com/acdlite/react-fiber-architecture">https://github.com/acdlite/react-fiber-architecture</a></i></p>
+<p><i>React docs : <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/docs/reconciliation.html">https://reactjs.org/docs/reconciliation.html</a></i></p>
 </div>
     </div>
   );
