@@ -319,6 +319,10 @@ Update Real DOM
 <p className='text-3xl mt-6 text-center font-bold'>
   What Are the Phases in React?
 </p>
+<p className='text-lg mt-6 text-center'>
+    
+
+</p>
 </div>
 <div>
 
