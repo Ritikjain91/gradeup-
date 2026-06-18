@@ -82,40 +82,40 @@ const element = <h1>Hello, {name}</h1>;
       </div>
 
       <div className="mt-9">
-  <p className="text-3xl text-center font-bold">
-    What is Babel?
-  </p>
+        <p className="text-3xl text-center font-bold">
+          What is Babel?
+        </p>
 
-  <p className="text-lg mt-6 text-center">
-    Babel is a JavaScript compiler that converts JSX into regular
-    JavaScript and transforms modern JavaScript features into versions
-    supported by older browsers.
-  </p>
+        <p className="text-lg mt-6 text-center">
+          Babel is a JavaScript compiler that converts JSX into regular
+          JavaScript and transforms modern JavaScript features into versions
+          supported by older browsers.
+        </p>
 
-  <div className="mt-6 flex justify-center">
-    <ul
-      className={`list-disc list-inside text-lg p-6 rounded-lg ${
-        darkMode
-          ? 'bg-gray-800 text-white'
-          : 'bg-gray-100 text-black'
-      }`}
-    >
-      <li>JSX → JavaScript</li>
-      <li>
-        Modern JavaScript → Browser-compatible JavaScript
-      </li>
-    </ul>
-  </div>
+        <div className="mt-6 flex justify-center">
+          <ul
+            className={`list-disc list-inside text-lg p-6 rounded-lg ${
+              darkMode
+                ? 'bg-gray-800 text-white'
+                : 'bg-gray-100 text-black'
+            }`}
+          >
+            <li>JSX → JavaScript</li>
+            <li>
+              Modern JavaScript → Browser-compatible JavaScript
+            </li>
+          </ul>
+        </div>
 
-  <div className="text-center mt-6">
-    <pre
-      className={`text-left p-4 rounded-lg overflow-x-auto ${
-        darkMode
-          ? 'bg-gray-800 text-white'
-          : 'bg-gray-100 text-black'
-      }`}
-    >
-      <code>{`// JSX Code
+        <div className="text-center mt-6">
+          <pre
+            className={`text-left p-4 rounded-lg overflow-x-auto ${
+              darkMode
+                ? 'bg-gray-800 text-white'
+                : 'bg-gray-100 text-black'
+            }`}
+          >
+            <code>{`// JSX Code
 const element = <h1>Hello, World!</h1>;
 
 // Babel Converts It To:
@@ -125,59 +125,59 @@ const element = React.createElement(
   null,
   'Hello, World!'
 );`}</code>
-    </pre>
-  </div>
-</div>
+          </pre>
+        </div>
+      </div>
 
-{/* React Rendering Flow */}
-<div className="mt-9">
-  <p className="text-3xl text-center font-bold">
-    React Rendering Flow
-  </p>
+      {/* React Rendering Flow */}
+      <div className="mt-9">
+        <p className="text-3xl text-center font-bold">
+          React Rendering Flow
+        </p>
 
-  <p className="text-lg mt-6 text-center">
-    This is the internal process React follows to convert JSX into
-    elements displayed on the browser screen.
-  </p>
+        <p className="text-lg mt-6 text-center">
+          This is the internal process React follows to convert JSX into
+          elements displayed on the browser screen.
+        </p>
 
-  <div className="flex flex-wrap justify-center items-center gap-3 mt-8">
-    {[
-      'JSX',
-      'Babel',
-      'React.createElement()',
-      'Virtual DOM',
-      'Reconciliation',
-      'Actual DOM',
-    ].map((step, index) => (
-      <React.Fragment key={step}>
-        <div
-          className={`px-5 py-3 rounded-lg font-semibold text-center ${
-            darkMode
-              ? 'bg-gray-800 text-white'
-              : 'bg-blue-100 text-black'
-          }`}
-        >
-          {step}
+        <div className="flex flex-wrap justify-center items-center gap-3 mt-8">
+          {[
+            'JSX',
+            'Babel',
+            'React.createElement()',
+            'Virtual DOM',
+            'Reconciliation',
+            'Actual DOM',
+          ].map((step, index) => (
+            <React.Fragment key={step}>
+              <div
+                className={`px-5 py-3 rounded-lg font-semibold text-center ${
+                  darkMode
+                    ? 'bg-gray-800 text-white'
+                    : 'bg-blue-100 text-black'
+                }`}
+              >
+                {step}
+              </div>
+
+              {index < 5 && (
+                <span className="text-2xl font-bold">
+                  →
+                </span>
+              )}
+            </React.Fragment>
+          ))}
         </div>
 
-        {index < 5 && (
-          <span className="text-2xl font-bold">
-            →
-          </span>
-        )}
-      </React.Fragment>
-    ))}
-  </div>
-
-  <div className="text-center mt-8">
-    <pre
-      className={`text-left p-4 rounded-lg overflow-x-auto ${
-        darkMode
-          ? 'bg-gray-800 text-white'
-          : 'bg-gray-100 text-black'
-      }`}
-    >
-      <code>{`JSX Code
+        <div className="text-center mt-8">
+          <pre
+            className={`text-left p-4 rounded-lg overflow-x-auto ${
+              darkMode
+                ? 'bg-gray-800 text-white'
+                : 'bg-gray-100 text-black'
+            }`}
+          >
+            <code>{`JSX Code
    ↓
 Babel Compiles It
    ↓
@@ -188,74 +188,75 @@ Virtual DOM Object
 Reconciliation (Diffing)
    ↓
 Actual DOM Update`}</code>
-    </pre>
-  </div>
+          </pre>
+        </div>
 
-  <div
-    className={`mt-6 p-6 rounded-lg ${
-      darkMode
-        ? 'bg-gray-800 text-white'
-        : 'bg-gray-100 text-black'
-    }`}
-  >
-    <ul className="list-disc list-inside space-y-3">
-      <li>
-        <strong>JSX:</strong> Developers write HTML-like syntax inside
-        JavaScript.
-      </li>
+        <div
+          className={`mt-6 p-6 rounded-lg ${
+            darkMode
+              ? 'bg-gray-800 text-white'
+              : 'bg-gray-100 text-black'
+          }`}
+        >
+          <ul className="list-disc list-inside space-y-3">
+            <li>
+              <strong>JSX:</strong> Developers write HTML-like syntax inside
+              JavaScript.
+            </li>
 
-      <li>
-        <strong>Babel:</strong> Converts JSX into regular JavaScript
-        function calls.
-      </li>
+            <li>
+              <strong>Babel:</strong> Converts JSX into regular JavaScript
+              function calls.
+            </li>
 
-      <li>
-        <strong>React.createElement():</strong> Creates React Element
-        objects from JSX.
-      </li>
+            <li>
+              <strong>React.createElement():</strong> Creates React Element
+              objects from JSX.
+            </li>
 
-      <li>
-        <strong>Virtual DOM:</strong> A lightweight JavaScript
-        representation of the real DOM.
-      </li>
+            <li>
+              <strong>Virtual DOM:</strong> A lightweight JavaScript
+              representation of the real DOM.
+            </li>
 
-      <li>
-        <strong>Reconciliation:</strong> React compares the previous
-        Virtual DOM with the new Virtual DOM to identify changes.
-      </li>
+            <li>
+              <strong>Reconciliation:</strong> React compares the previous
+              Virtual DOM with the new Virtual DOM to identify changes.
+            </li>
 
-      <li>
-        <strong>Actual DOM:</strong> React updates only the changed
-        parts of the browser DOM, improving performance.
-      </li>
-    </ul>
-  </div>
+            <li>
+              <strong>Actual DOM:</strong> React updates only the changed
+              parts of the browser DOM, improving performance.
+            </li>
+          </ul>
+        </div>
+      </div>
 
-</div>
-<div>
-  <p className='text-3xl mt-9 text-center font-bold'> What Is Virtual DOM?</p>
-  <p className='text-lg mt-6 text-center'>
-  The Virtual DOM is a lightweight, in-memory representation of the Real DOM. It is a tree-like structure that React uses to track UI changes. When the state or props change, React creates a new Virtual DOM and compares it with the previous one through a process called reconciliation (diffing). React then updates only the changed nodes in the Real DOM instead of re-rendering the entire DOM, improving performance.
-  </p>
-  <div className="mt-9">
-  <p className="text-3xl text-center font-bold">
-    Virtual DOM Update Example
-  </p>
+      <div>
+        <p className='text-3xl mt-9 text-center font-bold'> What Is Virtual DOM?</p>
+        <p className='text-lg mt-6 text-center'>
+          The Virtual DOM is a lightweight, in-memory representation of the Real DOM. It is a tree-like structure that React uses to track UI changes. When the state or props change, React creates a new Virtual DOM and compares it with the previous one through a process called reconciliation (diffing). React then updates only the changed nodes in the Real DOM instead of re-rendering the entire DOM, improving performance.
+        </p>
 
-  <p className="text-lg mt-6 text-center">
-    The following diagram demonstrates how React updates only the changed
-    parts of the Real DOM using the Virtual DOM and Reconciliation process.
-  </p>
+        <div className="mt-9">
+          <p className="text-3xl text-center font-bold">
+            Virtual DOM Update Example
+          </p>
 
-  <div className="text-center mt-6">
-    <pre
-      className={`text-left p-4 rounded-lg overflow-x-auto ${
-        darkMode
-          ? 'bg-gray-800 text-white'
-          : 'bg-gray-100 text-black'
-      }`}
-    >
-      <code>{`User Click
+          <p className="text-lg mt-6 text-center">
+            The following diagram demonstrates how React updates only the changed
+            parts of the Real DOM using the Virtual DOM and Reconciliation process.
+          </p>
+
+          <div className="text-center mt-6">
+            <pre
+              className={`text-left p-4 rounded-lg overflow-x-auto ${
+                darkMode
+                  ? 'bg-gray-800 text-white'
+                  : 'bg-gray-100 text-black'
+              }`}
+            >
+              <code>{`User Click
     │
     ▼
 setCount(1)
@@ -292,70 +293,89 @@ Update Real DOM
 <h1>Count: 0</h1>
         ↓
 <h1>Count: 1</h1>`}</code>
-    </pre>
-  </div>
-</div>
-</div>
-<div>
+            </pre>
+          </div>
+        </div>
+      </div>
 
-</div>
-<div>
-<p className='text-3xl mt-9 text-center font-bold'>
-  What is Reconciliation?
-</p>
+      <div>
+        <p className='text-3xl mt-9 text-center font-bold'>
+          What is Reconciliation?
+        </p>
 
-<p className='text-lg mt-6 text-center'>
-  Reconciliation is the algorithm React uses to compare one Virtual DOM tree with another to determine which parts of the UI need to be updated. It identifies the differences between the previous Virtual DOM and the new Virtual DOM and updates only the necessary parts of the Real DOM to improve performance.
-  
-  <br /><br />
+        <p className='text-lg mt-6 text-center'>
+          Reconciliation is the algorithm React uses to compare one Virtual DOM tree with another to determine which parts of the UI need to be updated. It identifies the differences between the previous Virtual DOM and the new Virtual DOM and updates only the necessary parts of the Real DOM to improve performance.
+          
+          <br /><br />
 
-  <strong><i>Update:</i></strong> An update is a change in the data used to render a React application, usually triggered by <code>setState</code> or a state updater function from <code>useState</code>. This eventually causes React to re-render the component.
-</p>
-<p><i>References-</i></p>
-<p><i>Github : <a target="_blank" rel="noopener noreferrer" href="https://github.com/acdlite/react-fiber-architecture">https://github.com/acdlite/react-fiber-architecture</a></i></p>
-<p><i>React docs : <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/docs/reconciliation.html">https://reactjs.org/docs/reconciliation.html</a></i></p>
-</div>
-<div>
-<p className='text-3xl mt-6 text-center font-bold'>
-  What Are the Phases in React?
-</p>
-<p className='text-lg mt-6 text-center'>  
-Render Phase and Commit Phase are the two main phases in React's rendering process. During the Render Phase, React builds a new Virtual DOM (Fiber) tree based on the current state and props, and compares it with the previous tree to determine what changes are needed. During the Commit Phase, React applies those changes to the Real DOM. The Render Phase can be paused, interrupted, or restarted to handle higher-priority updates, while the Commit Phase is atomic and cannot be interrupted.
-</p>
-</div>
-<div>
+          <strong><i>Update:</i></strong> An update is a change in the data used to render a React application, usually triggered by <code>setState</code> or a state updater function from <code>useState</code>. This eventually causes React to re-render the component.
+        </p>
+        <p><i>References-</i></p>
+        <p><i>Github : <a target="_blank" rel="noopener noreferrer" href="https://github.com/acdlite/react-fiber-architecture">https://github.com/acdlite/react-fiber-architecture</a></i></p>
+        <p><i>React docs : <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/docs/reconciliation.html">https://reactjs.org/docs/reconciliation.html</a></i></p>
+      </div>
 
-  <p className='text-3xl mt-6 text-center font-bold'>
-    What are Hooks ?
-  </p>
-  <p className='text-lg mt-6 text-center'>
-    Hooks are features provided by React that allow us to use state and other React functionalities inside functional components. They serve as an alternative to certain class component lifecycle methods, such as `componentDidMount()` and `componentDidUpdate()`. Additionally, Hooks make the code more flexible, reusable, and easier to maintain, resulting in cleaner and more readable React applications.
+      <div>
+        <p className='text-3xl mt-6 text-center font-bold'>
+          What Are the Phases in React?
+        </p>
+        <p className='text-lg mt-6 text-center'>  
+          Render Phase and Commit Phase are the two main phases in React's rendering process. During the Render Phase, React builds a new Virtual DOM (Fiber) tree based on the current state and props, and compares it with the previous tree to determine what changes are needed. During the Commit Phase, React applies those changes to the Real DOM. The Render Phase can be paused, interrupted, or restarted to handle higher-priority updates, while the Commit Phase is atomic and cannot be interrupted.
+        </p>
+      </div>
 
-</p>
-</div>
-<div>
+      <div>
+        <p className='text-3xl mt-6 text-center font-bold'>
+          What are Hooks ?
+        </p>
+        <p className='text-lg mt-6 text-center'>
+          Hooks are features provided by React that allow us to use state and other React functionalities inside functional components. They serve as an alternative to certain class component lifecycle methods, such as `componentDidMount()` and `componentDidUpdate()`. Additionally, Hooks make the code more flexible, reusable, and easier to maintain, resulting in cleaner and more readable React applications.
+        </p>
+      </div>
+      
 
-  <p className='text-3xl mt-6 text-center font-bold'>
-    What are lifecycle methods in React?
-  </p>
-  <p className='text-lg mt-6 text-center'>
-   <strong>Lifecycle methods</strong> are special methods in React class components that allow developers to hook into different stages of a component's lifecycle, such as mounting, updating, and unmounting. These methods enable developers to perform specific actions at each stage, such as fetching data, updating the DOM, or cleaning up resources. Common lifecycle methods include `componentDidMount()`, `componentDidUpdate()`, and `componentWillUnmount()`. With the introduction of Hooks in functional components, similar functionality can be achieved using the `useEffect` Hook.
-   <br />
-   
-   <li className='text-lg text-left'>
-  <strong>componentDidMount()</strong>: Called once after the component is mounted (inserted into the DOM). It is commonly used for API calls, data fetching, event listeners, or subscriptions.
-</li>
+      <div>
+        <p className="text-3xl mt-6 text-center font-bold">
+          What are Lifecycle Methods in React?
+        </p>
 
-<li className='text-lg text-left'>
-  <strong>componentDidUpdate()</strong>: Called after the component updates due to changes in props or state. It is commonly used for updating the DOM, making API calls based on changes, or performing other side effects.
-</li>
+        <div className="text-lg my-6 text-center">
+          <p>
+            <strong>Lifecycle methods</strong> are special methods in React class
+            components that allow developers to hook into different stages of a
+            component's lifecycle, such as mounting, updating, and unmounting.
+            These methods enable developers to perform specific actions at each stage,
+            such as fetching data, updating the DOM, or cleaning up resources.
+            Common lifecycle methods include <code>componentDidMount()</code>,
+            <code> componentDidUpdate()</code>, and
+            <code> componentWillUnmount()</code>. With the introduction of Hooks in
+            functional components, similar functionality can be achieved using the
+            <code> useEffect</code> Hook.
+          </p>
+       
+        </div>
+        
 
-<li className='text-lg text-left'>
-  <strong>componentWillUnmount()</strong>: Called just before the component is removed from the DOM. It is used for cleanup tasks such as removing event listeners, canceling API requests, or clearing timers.
-</li>
-  
-  </p>
-</div>
+        <ul className="text-lg mt-10 list-disc pl-6">
+          <li className="text-left">
+            <strong>componentDidMount()</strong>: Called once after the component is
+            mounted (inserted into the DOM). It is commonly used for API calls, data
+            fetching, event listeners, or subscriptions.
+          </li>
+
+          <li className="text-left mt-4">
+            <strong>componentDidUpdate()</strong>: Called after the component updates
+            due to changes in props or state. It is commonly used for updating the DOM,
+            making API calls based on changes, or performing other side effects.
+          </li>
+
+          <li className="text-left mt-4">
+            <strong>componentWillUnmount()</strong>: Called just before the component is
+            removed from the DOM. It is used for cleanup tasks such as removing event
+            listeners, canceling API requests, or clearing timers.
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
