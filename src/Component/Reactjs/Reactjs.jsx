@@ -319,9 +319,8 @@ Update Real DOM
 <p className='text-3xl mt-6 text-center font-bold'>
   What Are the Phases in React?
 </p>
-<p className='text-lg mt-6 text-center'>
-    
-
+<p className='text-lg mt-6 text-center'>  
+Render Phase and Commit Phase are the two main phases in React's rendering process. During the Render Phase, React builds a new Virtual DOM (Fiber) tree based on the current state and props, and compares it with the previous tree to determine what changes are needed. During the Commit Phase, React applies those changes to the Real DOM. The Render Phase can be paused, interrupted, or restarted to handle higher-priority updates, while the Commit Phase is atomic and cannot be interrupted.
 </p>
 </div>
 <div>
@@ -332,6 +331,29 @@ Update Real DOM
   <p className='text-lg mt-6 text-center'>
     Hooks are features provided by React that allow us to use state and other React functionalities inside functional components. They serve as an alternative to certain class component lifecycle methods, such as `componentDidMount()` and `componentDidUpdate()`. Additionally, Hooks make the code more flexible, reusable, and easier to maintain, resulting in cleaner and more readable React applications.
 
+</p>
+</div>
+<div>
+
+  <p className='text-3xl mt-6 text-center font-bold'>
+    What are lifecycle methods in React?
+  </p>
+  <p className='text-lg mt-6 text-center'>
+   <strong>Lifecycle methods</strong> are special methods in React class components that allow developers to hook into different stages of a component's lifecycle, such as mounting, updating, and unmounting. These methods enable developers to perform specific actions at each stage, such as fetching data, updating the DOM, or cleaning up resources. Common lifecycle methods include `componentDidMount()`, `componentDidUpdate()`, and `componentWillUnmount()`. With the introduction of Hooks in functional components, similar functionality can be achieved using the `useEffect` Hook.
+   <br />
+   
+   <li className='text-lg text-left'>
+  <strong>componentDidMount()</strong>: Called once after the component is mounted (inserted into the DOM). It is commonly used for API calls, data fetching, event listeners, or subscriptions.
+</li>
+
+<li className='text-lg text-left'>
+  <strong>componentDidUpdate()</strong>: Called after the component updates due to changes in props or state. It is commonly used for updating the DOM, making API calls based on changes, or performing other side effects.
+</li>
+
+<li className='text-lg text-left'>
+  <strong>componentWillUnmount()</strong>: Called just before the component is removed from the DOM. It is used for cleanup tasks such as removing event listeners, canceling API requests, or clearing timers.
+</li>
+  
   </p>
 </div>
     </div>
