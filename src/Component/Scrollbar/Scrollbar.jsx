@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Scrollbar = () => {
   const navigate = useNavigate();
 
-  const topics = ['Javascript', 'React JS', 'SQL'];
+  const topics = ['Javascript', 'React JS', 'DBMS SQL','MongoDB','Node.js','Express.js','Python','Django '];
 
   return (
     <div>

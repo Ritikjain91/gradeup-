@@ -18,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/javascript" element={<Javascript />} />
          <Route path="/reactjs" element={<Reactjs />} />
+         
              {/* <Route path="/javascript" element={<Javascript />} /> */}
         <Route path="*" element={<h1 className='text-4xl text-center mt-10 text-red-500'>404 Not Found</h1>} />
         {/* ... */}
