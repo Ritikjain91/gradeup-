@@ -12,9 +12,7 @@ const Scrollbar = () => {
         {topics.map((topic, index) => (
           <p
             key={index}
-            onClick={() =>
-              topic !== 'Javascript' && navigate(`/${topic.toLowerCase().replace(' ', '')}`)
-            }
+            onClick={() => navigate(`/${topic.toLowerCase().replace(' ', '')}`)}
             className="text-lg font-bold cursor-pointer border-b-2 border-blue-500 pb-1"
           >
             {topic}

@@ -4,7 +4,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Navbar from './Component/Navbar/Navbar';
 import Home from './Component/Home/Home.jsx';
 import About from './Component/About/About.jsx';
-import Services from './Component/Services/Services.jsx';
+import Javascript from './Component/Javascript/Javascript.jsx';
 import Reactjs from './Component/Reactjs/Reactjs.jsx';
 
 function App() {
@@ -16,8 +16,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/javascript" element={<Javascript />} />
          <Route path="/reactjs" element={<Reactjs />} />
+             {/* <Route path="/javascript" element={<Javascript />} /> */}
         <Route path="*" element={<h1 className='text-4xl text-center mt-10 text-red-500'>404 Not Found</h1>} />
         {/* ... */}
       </Routes>

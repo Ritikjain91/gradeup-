@@ -80,7 +80,14 @@ const element = <h1>Hello, {name}</h1>;
           </pre>
         </div>
       </div>
-
+  <div>
+        <p className='text-3xl mt-6 text-center font-bold'>
+          What are Webpack in React  ?
+        </p>
+        <p className='text-lg mt-6 text-center'>
+          Webpack is a module bundler for JavaScript applications. In the context of React, it helps to bundle all the different modules and dependencies into a single file that can be efficiently loaded by the browser. This process optimizes the application's performance by reducing the number of HTTP requests and enabling features like code splitting and tree shaking.
+        </p>
+      </div>
       <div className="mt-9">
         <p className="text-3xl text-center font-bold">
           What is Babel?
@@ -231,6 +238,7 @@ Actual DOM Update`}</code>
           </ul>
         </div>
       </div>
+      
 
       <div>
         <p className='text-3xl mt-9 text-center font-bold'> What Is Virtual DOM?</p>
@@ -324,14 +332,7 @@ Update Real DOM
         </p>
       </div>
 
-      <div>
-        <p className='text-3xl mt-6 text-center font-bold'>
-          What are Hooks ?
-        </p>
-        <p className='text-lg mt-6 text-center'>
-          Hooks are features provided by React that allow us to use state and other React functionalities inside functional components. They serve as an alternative to certain class component lifecycle methods, such as `componentDidMount()` and `componentDidUpdate()`. Additionally, Hooks make the code more flexible, reusable, and easier to maintain, resulting in cleaner and more readable React applications.
-        </p>
-      </div>
+     
       
 
       <div>
@@ -375,6 +376,28 @@ Update Real DOM
             listeners, canceling API requests, or clearing timers.
           </li>
         </ul>
+      </div>
+      
+       <div>
+        <p className='text-3xl mt-6 text-center font-bold'>
+          What are Hooks ?
+        </p>
+        <p className='text-lg mt-6 text-center'>
+          Hooks are features provided by React that allow us to use state and other React functionalities inside functional components. They serve as an alternative to certain class component lifecycle methods, such as `componentDidMount()` and `componentDidUpdate()`. Additionally, Hooks make the code more flexible, reusable, and easier to maintain, resulting in cleaner and more readable React applications.
+        </p>
+        <p className='text-lg mt-6 text-left'>
+          Different types of hooks in React include:
+         </p>
+        <li className='text-lg mt-6 text-left'>
+          <code>
+  useState: A React Hook that allows functional components to create and update state variables.
+</code>
+        </li>
+          <li className='text-lg mt-6 text-left'>
+         <code>
+  useEffect: A React Hook that allows a functional component to perform side effects, such as API calls, directly updating the Dom, and setting up timers.
+</code>
+        </li>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ const Navbar = () => {
   const navLinks = [
     { to: '/', label: 'Home' },
     { to: '/about', label: 'GATE' },
-    { to: '/services', label: 'Interview Preparation' },
+    { to: '/javascript', label: 'Interview Preparation' },
     { 
       to: '/contact', 
       label: 'DBMS & SQL',
